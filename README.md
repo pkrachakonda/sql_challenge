@@ -23,5 +23,14 @@ Based on ERD schematic, Primary and Foreign Keys were also defined.
 
 Similar process was implemented for creating remaining tables *Employees* (Lines 21- 34), *Departments* (Lines 37 - 44), *Departmental Empolyees* (Lines 47 - 56). *Departmental Managers* (Lines 59 - 68) and  *Salaries* (Lines 71 - 78). *Date of Birth* and *Hiring Date* columns of *Employees* table/object require that Date format to be in *MDY* format. After creating the Tables/objects, data from csv files were imported into their respective objects/tables using the inbuilt *Import and Export* function of Postgress database.
 
- 
+## DATA ANALYSIS
+
+![image](https://github.com/pkrachakonda/sql_challenge/assets/20739237/908c0351-81c2-4645-9afa-4be3eeea8226)
+![image](https://github.com/pkrachakonda/sql_challenge/assets/20739237/6f139863-5c8e-4e2f-8642-19eebfd5ca91)
+
+Line 3 selects coulmns Employee Number, Employee's Last and First Name columns from *Employee's* Table (line 4)  as well as their corresponding salaries from *Salaries* Table by performing an inner join with coresponding empolyee number (id0 (Line 5)
+
+Similarly code in line 9-11 display employee's first and last name as well as date and month when they have been hired in year 1986.
+
+By joining/matching the Employee's Id/number with department manager Id/number as well as with Department code/number, lines 15 - 20 display Manager of each department along with their department number, department name, employee number, last name, and first name.
 
